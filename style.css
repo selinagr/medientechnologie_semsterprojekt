@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #CECECE;
+}
+
+
+/*RESETS*/
+
+html, body, h1, h2, p, ul, li, a {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+
+
+/*TYPO*/
+
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0px 0px 20px 0px;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 40px 0px 20px 0px;
+}
+
+a {
+	color:rgb(150,150,150); /*farbe für links geändert*/
+
+}
+
+
+a:hover {
+	color:black; /*drüberfahren*/
+	font-weight: 900;
+
+}
+
+a:active {
+	color:red; /*beimklicken*/
+	font-family: 'UniversBold', arial, sans-serif;
+}
+
+/*LAYOUT*/
+
+.site {
+	width: 1200px;
+	height: 900px;
+	background-color: #fff; /*weis*/
+	box-shadow: 2px 2px 5px rgba(0,0,0,1); /*Schatten*/
+	margin: 50px auto 0px auto; /*position*/
+	padding: 48px 60px 48px 60px; /*nach innen geschrumpft*/
+}
+
+
+/*GRID*/
+
+@font-face {
+    font-family: 'UniversLight';
+    src: url('UniversLTStd-Light.otf');
+}
+@font-face {
+    font-family: 'UniversBold';
+    src: url('UniversLTStd-Bold.otf');
+}
+
+
+.ueberschrift1 {
+	width: 1080px;
+	height: 30px;
+	float: left;
+	font-size: 30px;
+	font-family: 'UniversBold', arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 20px;
+}
+.ueberschrift2 {
+	width: 1080px;
+	height: 101px;
+	float: left;
+	font-size: 28px;
+	font-family: 'UniversLight', arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 20px;
+}
+
+
+.ersteSpalte {
+	width: 60px;
+
+}
+
+.zweiteSpalte {
+	width: 218px;
+
+}
+
+.dritteSpalte {
+	width: 277px;
+	
+
+}
+
+#test {
+	visibility: hidden; /*normal unsichtbar*/
+	opacity: 0;
+	transition: 0.6s opacity; /*immer in vorhandenem element*/
+}
+
+#test:target {
+	visibility: visible; /*wenn in url dann sichtbar*/
+	opacity: 1;
+}
+
+
+
+
+.vierteSpalte {
+	width: 525px;
+}
+
+.ersteSpalte, .zweiteSpalte, .dritteSpalte, .vierteSpalte {
+	height: 665px;
+	float: left;
+	font-size: 13px;
+	line-height: 19px;
+	font-family: 'UniversLight', arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(150,150,150);
+}
+
+
+.infotext {
+	color: rgb(0,0,0);
+	font-size: 11px;
+	line-height: 14px;
+	margin: 20px 0px 20px 60px; 
+}
+
+.infotextdick {
+	font-family: 'UniversBold', arial, sans-serif;
+	margin: 20px auto auto auto; 
+}
+
+.normaltext {
+	margin: 20px auto auto auto; 
+}
+
+.hervorheben {
+	font-size: 18px;
+	margin: 10px auto 10px auto; 
+	font-family: 'UniversBold', arial, sans-serif;
+	color: rgb(206,0,29);
+}
+
