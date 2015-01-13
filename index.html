@@ -4,8 +4,24 @@
 	<meta charset="UTF-8">
 	<title>Olympische Spiele</title>
 	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="jquery.js"> </script>
+	
 </head>
 <body>
+
+	<script type="text/javascript">
+	function toggle(control){
+		var elem = document.getElementById(control);
+		
+		if(elem.style.display == "none"){
+			elem.style.display = "block";
+		}else{
+			elem.style.display = "none";
+		}
+	}
+	</script>
+
+
 	<section class="site">
 
 		<h1>
@@ -14,107 +30,78 @@
 		</h1>
 		
 		<ul class="ersteSpalte">
-			<li><a href="#1896">1896</a><a href="Athen">Athen</a></li>
-			<li><a href="#1900">1900</a></li>
-			<li><a href="#1904">1904</a></li>
-			<li><a href="#1908">1908</a></li>
-			<li><a href="#1912">1912</a></li>
-			<li><a href="#1916">1916</a></li>
-			<li><a href="#1920">1920</a></li>
-			<li><a href="#1924">1924</a></li>
-			<li><a href="#1928">1928</a></li>
-			<li><a href="#1932">1932</a></li>
-			<li><a href="#1936">1936</a></li>
-			<li><a href="#1940">1940</a></li>
-			<li><a href="#1944">1944</a></li>
-			<li><a href="#1948">1948</a></li>
-			<li><a href="#1952">1952</a></li>
-			<li><a href="#1956">1956</a></li>
-			<li><a href="#1960">1960</a></li>
-			<li><a href="#1964">1964</a></li>
-			<li><a href="#1968">1968</a></li>
-			<li><a href="#1972">1972</a></li>
-			<li><a href="#1976">1976</a></li>
-			<li><a href="#1980">1980</a></li>
-				<li><a class="hervorheben" id="test2" href="#test">1984</a></li>
-			<li><a href="#1988">1988</a></li>
-			<li><a href="#1992">1992</a></li>
-			<li><a href="#1996">1996</a></li>
-			<li><a href="#2000">2000</a></li>
-			<li><a href="#2004">2004</a></li>
-			<li><a href="#2008">2008</a></li>
-			<li><a href="#2012">2012</a></li>
-			<li><a href="#2016">2016</a></li>
-			<li><a href="#2020">2020</a></li>
+			<li><a href="">1896</a><a class="abstand" href="Athen">Athen</a></li>
+			<li><a href="">1900</a><a class="abstand">Paris</a></li>
+			<li><a href="">1904</a><a class="abstand">St.Louis</a></li>
+			<li><a href="">1908</a><a class="abstand">London</a></li>
+			<li><a href="">1912</a><a class="abstand">Stockholm</a></li>
+			<li><a href="">1916</a><a class="abstand">Berlin</a></li>
+			<li><a href="">1920</a><a class="abstand">Antwerpen</a></li>
+			<li><a href="">1924</a><a class="abstand">Paris</a></li>
+			<li><a href="">1928</a><a class="abstand">Amsterdam</a></li>
+			<li><a href="">1932</a><a class="abstand">Los Angeles</a></li>
+			<li><a href="">1936</a><a class="abstand">Berlin</a></li>
+			<li><a href="">1940</a><a class="abstand">Helsinki/ Tokio</a></li>
+			<li><a href="">1944</a><a class="abstand">London</a></li>
+			<li><a href="">1948</a><a class="abstand">London</a></li>
+			<li><a href="">1952</a><a class="abstand">Helsinki</a></li>
+			<li><a href="">1956</a><a class="abstand">Stockholm/ Melbourne</a></li>
+			<li><a href="">1960</a><a class="abstand">Rom</a></li>
+			<li><a href="">1964</a><a class="abstand">Tokio</a></li>
+			<li><a href="">1968</a><a class="abstand">Mexiko</a></li>
+			<li><a href="">1972</a><a class="abstand">München</a></li>
+			<li><a href="">1976</a><a class="abstand">Montreal</a></li>
+			<li><a href="">1980</a><a class="abstand">Moskau</a></li>
+				<li><a id="testD">1984</a><a class="abstand">Los Angeles</a></li>
+			<li><a href="">1988</a><a class="abstand">Seoul</a></li>
+			<li><a href="">1992</a><a class="abstand">Barcelona</a></li>
+			<li><a href="">1996</a><a class="abstand">Atlanta</a></li>
+			<li><a href="">2000</a><a class="abstand">Sydney</a></li>
+			<li><a href="">2004</a><a class="abstand">Athen</a></li>
+			<li><a href="">2008</a><a class="abstand">Peking</a></li>
+			<li><a href="">2012</a><a class="abstand">London</a></li>
+			<li><a href="">2016</a><a class="abstand">Rio de Janeiro</a></li>
+			<li><a href="">2020</a><a class="abstand">Tokio</a></li>
 		</ul>
 
-		<ul class="zweiteSpalte">
-			<li>Athen</li>
-			<li>Paris</li>
-			<li>St.Louis</li>
-			<li>London</li>
-			<li>Stockholm</li>
-			<li>Berlin</li>
-			<li>Antwerpen</li>
-			<li>Paris</li>
-			<li>Amsterdam</li>
-			<li>Los Angeles</li>
-			<li>Berlin</li>
-			<li>Helsinki/ Tokio</li>
-			<li>London</li>
-			<li>London</li>
-			<li>Helsinki</li>
-			<li>Stockholm/ Melbourne</li>
-			<li>Rom</li>
-			<li>Tokio</li>
-			<li>Mexiko</li>
-			<li>München</li>
-			<li>Montreal</li>
-			<li>Moskau</li>
-			<li>Los Angeles</li>
-			<li>Seoul</li>
-			<li>Barcelona</li>
-			<li>Atlanta</li>
-			<li>Sydney</li>
-			<li>Athen</li>
-			<li>Peking</li>
-			<li>London</li>
-			<li>Rio de Janeiro</li>
-			<li>Tokio</li>
+
+		<ul class="zweiteSpalte"></ul>
+
+
+		<ul id="disziplinen" class="dritteSpalte">
+			<li><a href=""></a>Basketball</li>
+			<li><a href=""></a>Boxen</li>
+			<li><a href=""></a>Fechten</li>
+			<li><a href=""></a>Fußball</li>
+			<li><a href=""></a>Gewichtheben</li>
+			<li><a href=""></a>Hockey</li>
+			<li><a href=""></a>Kanusport</li>
+			<li><a href=""></a>Leichtathletik</li>
+			<li><a href=""></a>Moderner Fünfkampf</li>
+			<li><a href=""></a>Bahnradrennen</li>
+			<li><a href=""></a>Straßenrennen</li>
+			<li><a href=""></a>Dressur</li>
+			<li><a href=""></a>Vielseitigkeitsreiten</li>
+			<li><a href=""></a>Springen</li>
+			<li><a href=""></a>Freistil Ringen</li>
+			<li><a href=""></a>Ringen</li>
+			<li><a id="testA" href="">Rudern</a></li>
+			<li><a href=""></a>Schießen</li>
+			<li><a href=""></a>Kunst/ Turmspringen</li>
+			<li><a href=""></a>Schwimmen</li>
+			<li><a href=""></a>Wasserball</li>
+			<li><a href=""></a>Segeln</li>
+			<li><a href=""></a>Kunstturnen</li>
 		</ul>
 
-		<ul id="test" class="dritteSpalte">
-			<li>Basketball</li>
-			<li>Boxen</li>
-			<li>Fechten</li>
-			<li>Fußball</li>
-			<li>Gewichtheben</li>
-			<li>Hockey</li>
-			<li>Kanusport</li>
-			<li>Leichtathletik</li>
-			<li>Moderner Fünfkampf</li>
-			<li>Bahnradrennen</li>
-			<li>Straßenrennen</li>
-			<li>Dressur</li>
-			<li>Vielseitigkeitsreiten</li>
-			<li>Springen</li>
-			<li>Freistil Ringen</li>
-			<li>Ringen</li>
-			<li>Rudern</li>
-			<li>Schießen</li>
-			<li>Kunst/ Turmspringen</li>
-			<li>Schwimmen</li>
-			<li>Wasserball</li>
-			<li>Segeln</li>
-			<li>Kunstturnen</li>
-		</ul>
-
-		<ul class="vierteSpalte">
+		<ul id="udrudern"class="vierteSpalte">
 			<li>Einer</li>
 			<li>Zweier ohne Steuermann</li>
 			<li>Zweier mit Steuermann</li>
-			<li>Doppelzweier</li>
+			<li><a href="javascript:toggle('test')">Doppelzweier</a></li>
 
+			
+			<div id="test" style="display: none">
 			<article class="infotext">
 				<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
 				<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
@@ -129,6 +116,7 @@
 				<p>Silber - Niederlande: Greet Hellemans, Nicolette Hellemans</p>
 				<p>Bronze - Kanada: Daniele Laumann, Silken Laumann</p>
 			</article>
+			</div>
 
 			<li>Vierer ohne Steuermann</li>
 			<li>Vierer mit Steuermann</li>
@@ -137,5 +125,6 @@
 		</ul>
 
 	</section>
+<script type="text/javascript" src="scripts.js"> </script>
 </body>
 </html>

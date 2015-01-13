@@ -37,16 +37,6 @@ a {
 }
 
 
-a:hover {
-	color:black; /*drüberfahren*/
-	font-weight: 900;
-
-}
-
-a:active {
-	color:red; /*beimklicken*/
-	font-family: 'UniversBold', arial, sans-serif;
-}
 
 /*LAYOUT*/
 
@@ -60,7 +50,8 @@ a:active {
 }
 
 
-/*GRID*/
+
+/*TYPO*/
 
 @font-face {
     font-family: 'UniversLight';
@@ -93,53 +84,6 @@ a:active {
 	line-height: 20px;
 }
 
-
-.ersteSpalte {
-	width: 60px;
-
-}
-
-.zweiteSpalte {
-	width: 218px;
-
-}
-
-.dritteSpalte {
-	width: 277px;
-	
-
-}
-
-#test {
-	visibility: hidden; /*normal unsichtbar*/
-	opacity: 0;
-	transition: 0.6s opacity; /*immer in vorhandenem element*/
-}
-
-#test:target {
-	visibility: visible; /*wenn in url dann sichtbar*/
-	opacity: 1;
-}
-
-
-
-
-.vierteSpalte {
-	width: 525px;
-}
-
-.ersteSpalte, .zweiteSpalte, .dritteSpalte, .vierteSpalte {
-	height: 665px;
-	float: left;
-	font-size: 13px;
-	line-height: 19px;
-	font-family: 'UniversLight', arial, sans-serif;
-	font-weight: normal;
-	font-style: normal;
-	color: rgb(150,150,150);
-}
-
-
 .infotext {
 	color: rgb(0,0,0);
 	font-size: 11px;
@@ -162,4 +106,94 @@ a:active {
 	font-family: 'UniversBold', arial, sans-serif;
 	color: rgb(206,0,29);
 }
+
+
+
+/*GRID*/
+
+
+.ersteSpalte {
+	width: 278px;
+}
+
+.zweiteSpalte {
+	width: 0px;
+}
+
+.dritteSpalte {
+	width: 277px;
+}
+
+.vierteSpalte {
+	width: 525px;
+}
+
+.ersteSpalte, .zweiteSpalte, .dritteSpalte, .vierteSpalte {
+	height: 665px;
+	float: left;
+	font-size: 13px;
+	line-height: 19px;
+	font-family: 'UniversLight', arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: rgb(150,150,150);
+}
+
+.abstand {
+	margin: auto auto auto 30px;
+}
+
+
+
+/*HOVER*/
+
+a:hover {
+	color:black; /*drüberfahren*/
+	font-weight: 900;
+
+}
+
+a:active {
+	color:red; /*beimklicken*/
+	font-family: 'UniversBold', arial, sans-serif;
+}
+
+
+
+/*KLICK*/
+
+
+.disziplinen {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+
+.dritteSpalte {
+	visibility: hidden ; /*normal unsichtbar*/
+	opacity: 0;
+	transition: 0.6s opacity; /*immer in vorhandenem element*/
+}
+
+
+/*#udrudern {
+	/*visibility: hidden; /*normal unsichtbar*/
+	/*opacity: 0;
+	transition: 0.6s opacity; /*immer in vorhandenem element*/
+
+
+.udrudern {
+	visibility: visible!important; /*wenn in url dann sichtbar*/
+	opacity: 1!important;
+	transition: 0.6s opacity;
+}
+
+.vierteSpalte {
+	visibility: hidden ; /*normal unsichtbar*/
+	opacity: 0;
+	transition: 0.6s opacity; /*immer in vorhandenem element*/
+}
+
+
+
 
