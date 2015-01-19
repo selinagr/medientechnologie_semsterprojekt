@@ -2,11 +2,6 @@
 	box-sizing: border-box;
 }
 
-body {
-	background-color: #CECECE;
-}
-
-
 /*RESETS*/
 
 html, body, h1, h2, p, ul, li, a {
@@ -15,6 +10,24 @@ html, body, h1, h2, p, ul, li, a {
 	list-style: none;
 	text-decoration: none;
 }
+
+
+
+/*LAYOUT*/
+
+.site {
+	width: 1200px;
+	height: 900px;
+	background-color: #fff; /*weis*/
+	box-shadow: 2px 2px 5px rgba(0,0,0,1); /*Schatten*/
+	margin: 50px auto 0px auto; /*position*/
+	padding: 48px 60px 48px 60px; /*nach innen geschrumpft*/
+}
+
+body {
+	background-color: #CECECE;
+}
+
 
 
 /*TYPO*/
@@ -38,20 +51,6 @@ a {
 
 
 
-/*LAYOUT*/
-
-.site {
-	width: 1200px;
-	height: 900px;
-	background-color: #fff; /*weis*/
-	box-shadow: 2px 2px 5px rgba(0,0,0,1); /*Schatten*/
-	margin: 50px auto 0px auto; /*position*/
-	padding: 48px 60px 48px 60px; /*nach innen geschrumpft*/
-}
-
-
-
-/*TYPO*/
 
 @font-face {
     font-family: 'UniversLight';
@@ -100,11 +99,8 @@ a {
 	margin: 20px auto auto auto; 
 }
 
-.hervorheben {
-	font-size: 18px;
-	margin: 10px auto 10px auto; 
-	font-family: 'UniversBold', arial, sans-serif;
-	color: rgb(206,0,29);
+.gewinnereingerueckt {
+	margin: auto auto auto 35px;
 }
 
 
@@ -154,7 +150,7 @@ a:hover {
 }
 
 a:active {
-	color:red; /*beimklicken*/
+	color:rgb(206,0,29); /*beimklicken*/
 	font-family: 'UniversBold', arial, sans-serif;
 }
 
@@ -162,8 +158,10 @@ a:active {
 
 /*KLICK*/
 
+/*Disziplinen*/
 
-.disziplinen {
+
+.disziplinenA {
 	visibility: visible !important; /*wenn in url dann sichtbar*/
 	opacity: 1 !important;
 	transition: 0.6s opacity;
@@ -176,10 +174,22 @@ a:active {
 }
 
 
-/*#udrudern {
-	/*visibility: hidden; /*normal unsichtbar*/
-	/*opacity: 0;
+
+.disziplinenW {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+
+.dritteSpalte {
+	visibility: hidden ; /*normal unsichtbar*/
+	opacity: 0;
 	transition: 0.6s opacity; /*immer in vorhandenem element*/
+}
+
+
+
+/*Unterdisziplinen*/
 
 
 .udrudern {
@@ -193,6 +203,29 @@ a:active {
 	opacity: 0;
 	transition: 0.6s opacity; /*immer in vorhandenem element*/
 }
+
+
+
+
+
+/*NACH KLICK*/
+
+.hervorheben {
+	font-size: 18px;
+	padding-top: 500px;
+    padding-bottom: 500px;
+	font-family: 'UniversBold', arial, sans-serif;
+	color: rgb(206,0,29);
+}
+
+.hervorheben2 {
+	font-size: 18px;
+	margin: 40px auto 40px 20px !important; 
+	font-family: 'UniversBold', arial, sans-serif;
+	color: rgb(206,0,29);
+}
+
+
 
 
 
