@@ -11,13 +11,13 @@
 
 	<script>
 	function toggle(control){
-		var elem = document.getElementById(control);
+		// var elem = document.getElementById(control);
 		
-		if(elem.style.display == "none"){
-			elem.style.display = "block";
-		}else{
-			elem.style.display = "none";
-		}
+		// if(elem.style.display == "none"){
+		// 	elem.style.display = "block";
+		// }else{
+		// 	elem.style.display = "none";
+		// }
 	}
 	</script>
 
@@ -29,252 +29,217 @@
 			<p class="ueberschrift1">Olympische Spiele </p>
 			<p class="ueberschrift2">der Neuzeit</p>
 		</h1>
-		
-		<ul class="ersteSpalte">
-			<li><a id="jahrA">1896</a><a id="ortA" class="abstand" href="Athen">Athen</a></li>
-			<li><a id="jahrB">1900</a><a id="ortB" class="abstand">Paris</a></li>
-			<li><a id="jahrC">1904</a><a id="ortC" class="abstand">St.Louis</a></li>
-			<li><a id="jahrD">1908</a><a id="ortD" class="abstand">London</a></li>
-			<li><a id="jahrE">1912</a><a id="ortE" class="abstand">Stockholm</a></li>
-			<li><a id="jahrF">1916</a><a id="ortF" class="abstand">Berlin</a></li>
-			<li><a id="jahrG">1920</a><a id="ortG" class="abstand">Antwerpen</a></li>
-			<li><a id="jahrH">1924</a><a id="ortH" class="abstand">Paris</a></li>
-			<li><a id="jahrI">1928</a><a id="ortI" class="abstand">Amsterdam</a></li>
-			<li><a id="jahrJ">1932</a><a id="ortJ" class="abstand">Los Angeles</a></li>
-			<li><a id="jahrK">1936</a><a id="ortK" class="abstand">Berlin</a></li>
-			<li><a id="jahrL">1940</a><a id="ortL" class="abstand">Helsinki/ Tokio</a></li>
-			<li><a id="jahrM">1944</a><a id="ortM" class="abstand">London</a></li>
-			<li><a id="jahrN">1948</a><a id="ortN" class="abstand">London</a></li>
-			<li><a id="jahrO">1952</a><a id="ortO" class="abstand">Helsinki</a></li>
-			<li><a id="jahrP">1956</a><a id="ortP" class="abstand">Stockholm/ Melbourne</a></li>
-			<li><a id="jahrQ">1960</a><a id="ortQ" class="abstand">Rom</a></li>
-			<li><a id="jahrR">1964</a><a id="ortR" class="abstand">Tokio</a></li>
-			<li><a id="jahrS">1968</a><a id="ortS" class="abstand">Mexiko</a></li>
-			<li><a id="jahrT">1972</a><a id="ortT" class="abstand">München</a></li>
-			<li><a id="jahrU">1976</a><a id="ortU" class="abstand">Montreal</a></li>
-			<li><a id="jahrV">1980</a><a id="ortV" class="abstand">Moskau</a></li>
+		<!-- Wenn bei floats, sollten alle floated elemente in einer Gruppe stecken -->
+		<div class="gruppe">
+			<ul class="ersteSpalte">
+				<li><a id="jahrA">1896</a><a id="ortA" class="abstand" href="Athen">Athen</a></li>
+				<li><a id="jahrB">1900</a><a id="ortB" class="abstand">Paris</a></li>
+				<li><a id="jahrC">1904</a><a id="ortC" class="abstand">St.Louis</a></li>
+				<li><a id="jahrD">1908</a><a id="ortD" class="abstand">London</a></li>
+				<li><a id="jahrE">1912</a><a id="ortE" class="abstand">Stockholm</a></li>
+				<li><a id="jahrF">1916</a><a id="ortF" class="abstand">Berlin</a></li>
+				<li><a id="jahrG">1920</a><a id="ortG" class="abstand">Antwerpen</a></li>
+				<li><a id="jahrH">1924</a><a id="ortH" class="abstand">Paris</a></li>
+				<li><a id="jahrI">1928</a><a id="ortI" class="abstand">Amsterdam</a></li>
+				<li><a id="jahrJ">1932</a><a id="ortJ" class="abstand">Los Angeles</a></li>
+				<li><a id="jahrK">1936</a><a id="ortK" class="abstand">Berlin</a></li>
+				<li><a id="jahrL">1940</a><a id="ortL" class="abstand">Helsinki/ Tokio</a></li>
+				<li><a id="jahrM">1944</a><a id="ortM" class="abstand">London</a></li>
+				<li><a id="jahrN">1948</a><a id="ortN" class="abstand">London</a></li>
+				<li><a id="jahrO">1952</a><a id="ortO" class="abstand">Helsinki</a></li>
+				<li><a id="jahrP">1956</a><a id="ortP" class="abstand">Stockholm/ Melbourne</a></li>
+				<li><a id="jahrQ">1960</a><a id="ortQ" class="abstand">Rom</a></li>
+				<li><a id="jahrR">1964</a><a id="ortR" class="abstand">Tokio</a></li>
+				<li><a id="jahrS">1968</a><a id="ortS" class="abstand">Mexiko</a></li>
+				<li><a id="jahrT">1972</a><a id="ortT" class="abstand">München</a></li>
+				<li><a id="jahrU">1976</a><a id="ortU" class="abstand">Montreal</a></li>
+				<li><a id="jahrV">1980</a><a id="ortV" class="abstand">Moskau</a></li>
 				<li><a id="jahrW">1984</a><a id="ortW" class="abstand">Los Angeles</a></li>
-			<li><a id="jahrX">1988</a><a id="ortX" class="abstand">Seoul</a></li>
-			<li><a id="jahrY">1992</a><a id="ortY" class="abstand">Barcelona</a></li>
-			<li><a id="jahrZ">1996</a><a id="ortZ" class="abstand">Atlanta</a></li>
-			<li><a id="jahrAA">2000</a><a id="ortAA" class="abstand">Sydney</a></li>
-			<li><a id="jahrBB">2004</a><a id="ortBB" class="abstand">Athen</a></li>
-			<li><a id="jahrCC">2008</a><a id="ortCC" class="abstand">Peking</a></li>
-			<li><a id="jahrDD">2012</a><a id="ortDD" class="abstand">London</a></li>
-			<li><a id="jahrEE">2016</a><a id="ortEE" class="abstand">Rio de Janeiro</a></li>
-			<li><a id="jahrFF">2020</a><a id="ortFF" class="abstand">Tokio</a></li>
-		</ul>
+				<li><a id="jahrX">1988</a><a id="ortX" class="abstand">Seoul</a></li>
+				<li><a id="jahrY">1992</a><a id="ortY" class="abstand">Barcelona</a></li>
+				<li><a id="jahrZ">1996</a><a id="ortZ" class="abstand">Atlanta</a></li>
+				<li><a id="jahrAA">2000</a><a id="ortAA" class="abstand">Sydney</a></li>
+				<li><a id="jahrBB">2004</a><a id="ortBB" class="abstand">Athen</a></li>
+				<li><a id="jahrCC">2008</a><a id="ortCC" class="abstand">Peking</a></li>
+				<li><a id="jahrDD">2012</a><a id="ortDD" class="abstand">London</a></li>
+				<li><a id="jahrEE">2016</a><a id="ortEE" class="abstand">Rio de Janeiro</a></li>
+				<li><a id="jahrFF">2020</a><a id="ortFF" class="abstand">Tokio</a></li>
+			</ul>
 
 
-		<ul class="zweiteSpalte"></ul>
+			<ul class="zweiteSpalte"></ul>
 
 
-		<section id="disziplinen">	
-		<ul id="disziplinenA" class="dritteSpalte">
-				<li><a id="AdisA">Fechten</a></li>
-				<li><a id="AdisB">Gewichtheben</a></li>
-				<li><a id="AdisC">Leichtathletik</a></li>
-				<li><a id="AdisD">Radsport</a></li>
-				<li><a id="AdisE">Ringen</a></li>
-				<li><a id="AdisF">Schießen</a></li>
-				<li><a id="AdisG">Schwimmen</a></li>
-				<li><a id="AdisH">Tennis</a></li>
-				<li><a id="AdisI">Turnen</a></li>
-		</ul>
+			<section id="disziplinen">	
+				
 
-		<ul id="disziplinenW" class="dritteSpalte">
-			<li><a id="WdisA">Basketball</a></li>
-			<li><a id="WdisB">Bogenschießen</a></li>
-			<li><a id="WdisC">Boxen</a></li>
-			<li><a id="WdisD">Fechten</a></li>
-			<li><a id="WdisE">Fußball</a></li>
-			<li><a id="WdisF">Gewichtheben</a></li>
-			<li><a id="WdisG">Handball</a></li>
-			<li><a id="WdisH">Hockey</a></li>
-			<li><a id="WdisI">Judo</a></li>
-			<li><a id="WdisJ">Kanurennsport</a></li>
-			<li><a id="WdisK">Leichtathletik</a></li>
-			<li><a id="WdisL">Moderner Fünfkampf</a></li>
-			<li><a id="WdisM">Bahnradrennen</a></li>
-			<li><a id="WdisN">Straßenrennen</a></li>
-			<li><a id="WdisO">Dressurreiten</a></li>
-			<li><a id="WdisP">Vielseitigkeitsreiten</a></li>
-			<li><a id="WdisQ">Springreiten</a></li>
-			<li><a id="WdisR">Freistil Ringen</a></li>
-			<li><a id="WdisS">Ringen</a></li>
-				<li><a id="WdisT">Rudern</a></li>
-			<li><a id="WdisU">Schießen</a></li>
-			<li><a id="WdisV">Kunst/ Turmspringen</a></li>
-			<li><a id="WdisW">Schwimmen</a></li>
-			<li><a id="WdisX">Wasserball</a></li>
-			<li><a id="WdisY">Segeln</a></li>
-			<li><a id="WdisZ">Turnen</a></li>
-			<li><a id="WdisAA">Volleyball</a></li>
-		</ul>
-		</section>
+				
+				<div class="clearFloat"></div>
+			</section>
 
 
-		<ul id="udrudern"class="vierteSpalte">
+			<ul id="udrudern"class="vierteSpalte">
 
 
-			<li><a href="javascript:toggle('test1')">Einer</a></li>
-			<div id="test1" style="display: none">
-			<article class="infotext">
-				<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
-				<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
-				<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
-				<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
-				<p class="infotextdick">Medaillen Männer</p>
-				<p>Gold - Finnland: Pertti Karppinen</p>
-				<p>Silber - Deutschland: Peter-Michael Kolbe</p>
-				<p>Bronze - Kanada: Robert Mills	</p>
-				<p class="infotextdick">Medaillen Frauen</p>
-				<p>Gold - Rumänien: Valeria Răcilă</p>
-				<p>Silber - USA: Charlotte Geer</p>
-				<p>Bronze - Belgien: Ann Haesebrouck</p>
-			</article>
-			</div>
+				<li><a href="javascript:toggle('test1')">Einer</a></li>
+				<div id="test1" style="display: none">
+				<article class="infotext">
+					<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
+					<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
+					<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
+					<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
+					<p class="infotextdick">Medaillen Männer</p>
+					<p>Gold - Finnland: Pertti Karppinen</p>
+					<p>Silber - Deutschland: Peter-Michael Kolbe</p>
+					<p>Bronze - Kanada: Robert Mills	</p>
+					<p class="infotextdick">Medaillen Frauen</p>
+					<p>Gold - Rumänien: Valeria Răcilă</p>
+					<p>Silber - USA: Charlotte Geer</p>
+					<p>Bronze - Belgien: Ann Haesebrouck</p>
+				</article>
+				</div>
 
 
-			<li><a href="javascript:toggle('test2')">Zweier ohne Steuermann</a></li>
-			<div id="test2" style="display: none">
-			<article class="infotext">
-				<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
-				<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
-				<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
-				<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
-				<p class="infotextdick">Medaillen Männer</p>
-				<p>Gold - Rumänien: Petru Iosub, Valer Toma</p>
-				<p>Silber - Spanien: Fernando Climent Huerta, Luis María Lasúrtegui</p>
-				<p>Bronze - Norwegen: Hans Magnus Grepperud, Sverre Løken</p>
-				<p class="infotextdick">Medaillen Frauen</p>
-				<p>Gold - Rumänien: Rumänien: Rodica Arba, Elena Horvat</p>
-				<p>Silber - Kanada: Elizabeth Craig, Patricia Smith</p>
-				<p>Bronze - Deutschland: Ellen Becker, Iris Völkner</p>
-			</article>
-			</div>
+				<li><a href="javascript:toggle('test2')">Zweier ohne Steuermann</a></li>
+				<div id="test2" style="display: none">
+				<article class="infotext">
+					<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
+					<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
+					<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
+					<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
+					<p class="infotextdick">Medaillen Männer</p>
+					<p>Gold - Rumänien: Petru Iosub, Valer Toma</p>
+					<p>Silber - Spanien: Fernando Climent Huerta, Luis María Lasúrtegui</p>
+					<p>Bronze - Norwegen: Hans Magnus Grepperud, Sverre Løken</p>
+					<p class="infotextdick">Medaillen Frauen</p>
+					<p>Gold - Rumänien: Rumänien: Rodica Arba, Elena Horvat</p>
+					<p>Silber - Kanada: Elizabeth Craig, Patricia Smith</p>
+					<p>Bronze - Deutschland: Ellen Becker, Iris Völkner</p>
+				</article>
+				</div>
 
 
-			<li><a href="javascript:toggle('test3')">Zweier mit Steuermann</a></li>
-			<div id="test3" style="display: none">
-			<article class="infotext">
-				<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
-				<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
-				<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
-				<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
-				<p class="infotextdick">Medaillen Männer</p>
-				<p>Gold - Italien: Carmine Abbagnale, Giuseppe Abbagnale, Giuseppe Di Capua</p>
-				<p>Silber - Rumänien: Dimitrie Popescu, Vasile Tomoiagă, Dumitru Răducanu</p>
-				<p>Bronze - USA: Kevin Still, Robert Espeseth, Douglas Herland	</p>
-			</article>
-			</div>
+				<li><a href="javascript:toggle('test3')">Zweier mit Steuermann</a></li>
+				<div id="test3" style="display: none">
+				<article class="infotext">
+					<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
+					<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
+					<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
+					<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
+					<p class="infotextdick">Medaillen Männer</p>
+					<p>Gold - Italien: Carmine Abbagnale, Giuseppe Abbagnale, Giuseppe Di Capua</p>
+					<p>Silber - Rumänien: Dimitrie Popescu, Vasile Tomoiagă, Dumitru Răducanu</p>
+					<p>Bronze - USA: Kevin Still, Robert Espeseth, Douglas Herland	</p>
+				</article>
+				</div>
 
 
-			<li><a href="javascript:toggle('test4')">Doppelzweier</a></li>
-			<div id="test4" style="display: none">
-			<article class="infotext">
-				<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
-				<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
-				<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
-				<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
-				<p class="infotextdick">Medaillen Männer</p>
-				<p>Gold - USA: Brad Alan Lewis, Paul Enquist</p>
-				<p>Silber - Belgien: Pierre-Marie Deloof, Dirk Crois</p>
-				<p>Bronze - Jugoslawien: Zoran Pancic, Milorad Stanulov	</p>
-				<p class="infotextdick">Medaillen Frauen</p>
-				<p>Gold - Rumänien: Marioara Popescu, Elisabeta Lipa</p>
-				<p>Silber - Niederlande: Greet Hellemans, Nicolette Hellemans</p>
-				<p>Bronze - Kanada: Daniele Laumann, Silken Laumann</p>
-			</article>
-			</div>
+				<li><a href="javascript:toggle('test4')">Doppelzweier</a></li>
+				<div id="test4" style="display: none">
+				<article class="infotext">
+					<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
+					<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
+					<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
+					<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
+					<p class="infotextdick">Medaillen Männer</p>
+					<p>Gold - USA: Brad Alan Lewis, Paul Enquist</p>
+					<p>Silber - Belgien: Pierre-Marie Deloof, Dirk Crois</p>
+					<p>Bronze - Jugoslawien: Zoran Pancic, Milorad Stanulov	</p>
+					<p class="infotextdick">Medaillen Frauen</p>
+					<p>Gold - Rumänien: Marioara Popescu, Elisabeta Lipa</p>
+					<p>Silber - Niederlande: Greet Hellemans, Nicolette Hellemans</p>
+					<p>Bronze - Kanada: Daniele Laumann, Silken Laumann</p>
+				</article>
+				</div>
 
 
-			<li><a href="javascript:toggle('test5')">Vierer ohne Steuermann</a></li>
-			<div id="test5" style="display: none">
-			<article class="infotext">
-				<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
-				<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
-				<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
-				<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
-				<p class="infotextdick">Medaillen Männer</p>
-				<p>Gold - Neuseeland: Leslie O’Connell, Shane O’Brien, Conrad Robertson, Keith Trask</p>
-				<p>Silber - USA: David Clark, Jonathan Smith, Philip Stekl, Alan Forney</p>
-				<p>Bronze - Dänemark: Michael Jessen, Lars Nielsen, Per Rasmussen, Erik Christiansen</p>
-			</article>
-			</div>
+				<li><a href="javascript:toggle('test5')">Vierer ohne Steuermann</a></li>
+				<div id="test5" style="display: none">
+				<article class="infotext">
+					<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
+					<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
+					<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
+					<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
+					<p class="infotextdick">Medaillen Männer</p>
+					<p>Gold - Neuseeland: Leslie O’Connell, Shane O’Brien, Conrad Robertson, Keith Trask</p>
+					<p>Silber - USA: David Clark, Jonathan Smith, Philip Stekl, Alan Forney</p>
+					<p>Bronze - Dänemark: Michael Jessen, Lars Nielsen, Per Rasmussen, Erik Christiansen</p>
+				</article>
+				</div>
 
 
-			<li><a href="javascript:toggle('test6')">Vierer mit Steuermann</a></li>
-			<div id="test6" style="display: none">
-			<article class="infotext">
-				<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
-				<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
-				<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
-				<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
-				<p class="infotextdick">Medaillen Männer</p>
-				<p>Gold - Großbritannien: Martin Cross, Richard Budgett, Andrew Holmes, Steven Redgrave,</p>
-				<p class="gewinnereingerueckt">Adrian Ellison</p>
-				<p>Silber - USA: Thomas Kiefer, Gregory Springer, Michael Bach, Edward Ives, John Stillings</p>
-				<p>Bronze - Neuseeland: Kevin Lawton, Donald Symon, Barrie Mabbott, Ross Tong, Brett Hollister</p>
-				<p class="infotextdick">Medaillen Frauen</p>
-				<p>Gold - Rumänien: Florica Lavric, Maria Fricioiu, Chira Apostol, Olga Bularda, Viorica Ioja</p>
-				<p>Silber - Kanada: Marilyn Brain, Angela Schneider, Barbara Armbrust, Jane Tregunno, </p>
-				<p class="gewinnereingerueckt">Lesley Thompson</p>
-				<p>Bronze - Australien: Robyn Grey-Gardner, Karen Brancourt, Susan Chapman, Margot Foster, </p>
-				<p class="gewinnereingerueckt">Susan Lee</p>
-			</article>
-			</div>
+				<li><a href="javascript:toggle('test6')">Vierer mit Steuermann</a></li>
+				<div id="test6" style="display: none">
+				<article class="infotext">
+					<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
+					<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
+					<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
+					<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
+					<p class="infotextdick">Medaillen Männer</p>
+					<p>Gold - Großbritannien: Martin Cross, Richard Budgett, Andrew Holmes, Steven Redgrave,</p>
+					<p class="gewinnereingerueckt">Adrian Ellison</p>
+					<p>Silber - USA: Thomas Kiefer, Gregory Springer, Michael Bach, Edward Ives, John Stillings</p>
+					<p>Bronze - Neuseeland: Kevin Lawton, Donald Symon, Barrie Mabbott, Ross Tong, Brett Hollister</p>
+					<p class="infotextdick">Medaillen Frauen</p>
+					<p>Gold - Rumänien: Florica Lavric, Maria Fricioiu, Chira Apostol, Olga Bularda, Viorica Ioja</p>
+					<p>Silber - Kanada: Marilyn Brain, Angela Schneider, Barbara Armbrust, Jane Tregunno, </p>
+					<p class="gewinnereingerueckt">Lesley Thompson</p>
+					<p>Bronze - Australien: Robyn Grey-Gardner, Karen Brancourt, Susan Chapman, Margot Foster, </p>
+					<p class="gewinnereingerueckt">Susan Lee</p>
+				</article>
+				</div>
 
 
-			<li><a href="javascript:toggle('test7')">Doppelvierer</a></li>
-			<div id="test7" style="display: none">
-			<article class="infotext">
-				<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
-				<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
-				<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
-				<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
-				<p class="infotextdick">Medaillen Männer</p>
-				<p>Gold - Deutschland: Albert Hedderich, Raimund Hörmann, Dieter Wiedenmann, Michael Dürsch</p>
-				<p>Silber - Australien: Paul Reedy, Gary Gullock, Timothy McLaren, Anthony Lovrich</p>
-				<p>Bronze - Kanada: Doug Hamilton, Mike Hughes, Phil Monckton, Bruce Ford</p>
-				<p class="infotextdick">Medaillen Frauen</p>
-				<p>Gold - Rumänien: Maricica Țăran, Anișoara Sorohan, Ioana Badea, Sofia Corban, </p>
-				<p class="gewinnereingerueckt">Ecaterina Oancia</p>
-				<p>Silber - USA: Anne Marden, Lisa Rohde, Joan Lind, Virginia Gilder, Kelly Rickon</p>
-				<p>Bronze - Dänemark: Hanne Eriksen, Birgitte Hanel, Inger Køfød, Bodil Steen Rasmussen, </p>
-				<p class="gewinnereingerueckt">Jette Hejli Sørensen</p>
-			</article>
-			</div>
+				<li><a href="javascript:toggle('test7')">Doppelvierer</a></li>
+				<div id="test7" style="display: none">
+				<article class="infotext">
+					<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
+					<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
+					<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
+					<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
+					<p class="infotextdick">Medaillen Männer</p>
+					<p>Gold - Deutschland: Albert Hedderich, Raimund Hörmann, Dieter Wiedenmann, Michael Dürsch</p>
+					<p>Silber - Australien: Paul Reedy, Gary Gullock, Timothy McLaren, Anthony Lovrich</p>
+					<p>Bronze - Kanada: Doug Hamilton, Mike Hughes, Phil Monckton, Bruce Ford</p>
+					<p class="infotextdick">Medaillen Frauen</p>
+					<p>Gold - Rumänien: Maricica Țăran, Anișoara Sorohan, Ioana Badea, Sofia Corban, </p>
+					<p class="gewinnereingerueckt">Ecaterina Oancia</p>
+					<p>Silber - USA: Anne Marden, Lisa Rohde, Joan Lind, Virginia Gilder, Kelly Rickon</p>
+					<p>Bronze - Dänemark: Hanne Eriksen, Birgitte Hanel, Inger Køfød, Bodil Steen Rasmussen, </p>
+					<p class="gewinnereingerueckt">Jette Hejli Sørensen</p>
+				</article>
+				</div>
 
 
-			<li><a href="javascript:toggle('test8')">Achter</a></li>
-			<div id="test8" style="display: none">
-			<article class="infotext">
-				<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
-				<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
-				<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
-				<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
-				<p class="infotextdick">Medaillen Männer</p>
-				<p>Gold - Kanada: Blair Horn, Dean Crawford, Michael Evans, Paul Steele, Grant Main, </p>
-				<p class="gewinnereingerueckt">Mark Evans, Kevin Neufeld, Patrick Turner, Brian McMahon</p>
-				<p>Silber - USA: Walter Lubsen, Andrew Sudduth, John Terwilliger, Christopher Penny, </p>
-				<p class="gewinnereingerueckt">Thomas Darling, Fred Borchelt, Charles Clapp, Bruce Ibbetson, Robert Jaugstetter</p>
-				<p>Bronze - Australien: Craig Muller, Clyde Hefer, Samuel Patten, Timothy Willoughby, </p>
-				<p class="gewinnereingerueckt">Ian Edmunds, James Battersby, Ion Popa, Stephen Evans, Gavin Thredgold</p>
-				<p class="infotextdick">Medaillen Frauen</p>
-				<p>Gold - USA: Shyril O’Steen, Harriet Metcalf, Carol Bower, Carolyn Graves, Jeanne Flanagan, </p>
-				<p class="gewinnereingerueckt">Kristine Norelius, Kristen Thorsness, Kathryn Keeler, Betsy Beard</p>
-				<p>Silber - Rumänien: Doina Bălan, Mărioara Trașcă, Aurora Pleșca, Aneta Mihaly, Adriana Bazon, </p>
-				<p class="gewinnereingerueckt">Mihaela Armășescu, Camelia Diaconescu, Lucia Sauce, Viorica Ioja</p>
-				<p>Bronze - Niederlande: Nicolette Hellemans, Lynda Cornet, Harriet van Ettekoven,  </p>
-				<p class="gewinnereingerueckt">Greet Hellemans, Marieke van Drogenbroek, Anne Marie Quist, Catharina Neelissen,</p>
-				<p class="gewinnereingerueckt">Willemien Vaandrager, Martha Laurijsen</p>
-			</article>
-			</div>
+				<li><a href="javascript:toggle('test8')">Achter</a></li>
+				<div id="test8" style="display: none">
+				<article class="infotext">
+					<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>
+					<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>
+					<p>Allein mit den betroffenen Ostblockstaaten sowie Kuba blieben sieben Mannschaften den olympischen Wettbewerben fern, die noch acht Jahre zuvor bei den letzten gemeinsamen Spielen in Montreal rund die Hälfte aller Medaillen gewonnen hatten. In zahlreichen Sportarten fehlte deshalb ein Großteil der Weltspitze.</p>
+					<p class="normaltext">Die Disziplin des Ruderns war erstmals 1896 vorgesehen, konnte aber wegen starken Windes nicht ausgetragen werden. Seither gab es in jedem Jahr Wettkämpfe. 1984 waren aus 30 Ländern 447 Ruderer am Start - 286 Männer und 161 Frauen. Rumänien war die erfolgreichste Nation und gewann mit sieben Goldmedaillen die Hälfte aller möglichen Titel.</p>
+					<p class="infotextdick">Medaillen Männer</p>
+					<p>Gold - Kanada: Blair Horn, Dean Crawford, Michael Evans, Paul Steele, Grant Main, </p>
+					<p class="gewinnereingerueckt">Mark Evans, Kevin Neufeld, Patrick Turner, Brian McMahon</p>
+					<p>Silber - USA: Walter Lubsen, Andrew Sudduth, John Terwilliger, Christopher Penny, </p>
+					<p class="gewinnereingerueckt">Thomas Darling, Fred Borchelt, Charles Clapp, Bruce Ibbetson, Robert Jaugstetter</p>
+					<p>Bronze - Australien: Craig Muller, Clyde Hefer, Samuel Patten, Timothy Willoughby, </p>
+					<p class="gewinnereingerueckt">Ian Edmunds, James Battersby, Ion Popa, Stephen Evans, Gavin Thredgold</p>
+					<p class="infotextdick">Medaillen Frauen</p>
+					<p>Gold - USA: Shyril O’Steen, Harriet Metcalf, Carol Bower, Carolyn Graves, Jeanne Flanagan, </p>
+					<p class="gewinnereingerueckt">Kristine Norelius, Kristen Thorsness, Kathryn Keeler, Betsy Beard</p>
+					<p>Silber - Rumänien: Doina Bălan, Mărioara Trașcă, Aurora Pleșca, Aneta Mihaly, Adriana Bazon, </p>
+					<p class="gewinnereingerueckt">Mihaela Armășescu, Camelia Diaconescu, Lucia Sauce, Viorica Ioja</p>
+					<p>Bronze - Niederlande: Nicolette Hellemans, Lynda Cornet, Harriet van Ettekoven,  </p>
+					<p class="gewinnereingerueckt">Greet Hellemans, Marieke van Drogenbroek, Anne Marie Quist, Catharina Neelissen,</p>
+					<p class="gewinnereingerueckt">Willemien Vaandrager, Martha Laurijsen</p>
+				</article>
+				</div>
 
 
-		</ul>
-
+			</ul>
+			<div class="clearFloat"></div>
+		</div>
 	</section>
 <script type="text/javascript" src="scripts.js"> </script>
 </body>
