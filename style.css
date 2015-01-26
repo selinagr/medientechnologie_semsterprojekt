@@ -158,10 +158,15 @@ a:active {
 	font-family: 'UniversBold', arial, sans-serif;
 }
 
+
+
 /* Clear floats*/
 .clearFloat {
 	clear: both;
 }
+
+
+
 
 /*KLICK*/
 
@@ -196,6 +201,25 @@ a:active {
 
 
 
+
+/*Unterdisziplinen*/
+
+.WdisTud {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+
+.vierteSpalte {
+	visibility: hidden ; /*normal unsichtbar*/
+	opacity: 0;
+	transition: 0.6s opacity; /*immer in vorhandenem element*/
+}
+
+
+
+
+
 /*Unterdisziplinen*/
 
 
@@ -219,8 +243,6 @@ a:active {
 
 .hervorheben {
 	font-size: 18px;
-	padding-top: 500px;
-    padding-bottom: 500px;
 	font-family: 'UniversBold', arial, sans-serif;
 	color: rgb(206,0,29);
 }
@@ -238,6 +260,8 @@ a:active {
 }
 
 
-
+.addMarginzwei {
+	margin-bottom: 20px;
+}
 
 
