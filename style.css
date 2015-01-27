@@ -173,32 +173,174 @@ a:active {
 /*Disziplinen*/
 
 
+.dritteSpalte {
+	visibility: hidden ; /*normal unsichtbar*/
+	opacity: 0;
+	transition: 0.6s opacity; /*immer in vorhandenem element*/
+}
+
+
+
 .disziplinenA {
 	visibility: visible !important; /*wenn in url dann sichtbar*/
 	opacity: 1 !important;
 	transition: 0.6s opacity;
 }
-
-.dritteSpalte {
-	visibility: hidden ; /*normal unsichtbar*/
-	opacity: 0;
-	transition: 0.6s opacity; /*immer in vorhandenem element*/
+.disziplinenB {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
 }
-
-
-
+.disziplinenC {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenD {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenE {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenF {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenG {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenH {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenI {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenJ {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenK {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenL {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenM {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenN {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenO {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenP {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenQ {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenR {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenS {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenT {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenU {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenV {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
 .disziplinenW {
 	visibility: visible !important; /*wenn in url dann sichtbar*/
 	opacity: 1 !important;
 	transition: 0.6s opacity;
 }
-
-.dritteSpalte {
-	visibility: hidden ; /*normal unsichtbar*/
-	opacity: 0;
-	transition: 0.6s opacity; /*immer in vorhandenem element*/
+.disziplinenX {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
 }
-
+.disziplinenY {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenZ {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenAA {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenBB {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenCC {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenDD {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenEE {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
+.disziplinenFF {
+	visibility: visible !important; /*wenn in url dann sichtbar*/
+	opacity: 1 !important;
+	transition: 0.6s opacity;
+}
 
 
 
@@ -254,11 +396,13 @@ a:active {
 	color: rgb(206,0,29);
 }
 
+
+
+
 .addMargin {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-
 
 .addMarginzwei {
 	margin-bottom: 20px;
