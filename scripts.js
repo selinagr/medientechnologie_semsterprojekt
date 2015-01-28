@@ -1,7 +1,7 @@
 //Add Content to site
 
 var disziplinenA = $(
-		'<ul id="disziplinenA" class="dritteSpalte">'
+		'<ul id="disziplinenA" class="">'
 				+'<li><a id="AdisA">Fechten</a></li>'
 				+'<li><a id="AdisB">Gewichtheben</a></li>'
 				+'<li><a id="AdisC">Leichtathletik</a></li>'
@@ -804,11 +804,11 @@ var disziplinenFF = $(
 
 
 var WdisTud = $(''
-			+'<ul id="udrudern"class="vierteSpalte">'
+			+'<ul id="udrudern"class="">'
 
 
-				+'<li><a href="javascript:toggle("test1")">Einer</a></li>'
-				+'<div id="test1" style="display: none">'
+				+'<li><a href="">Einer</a></li>'
+				+'<div id="test1">'
 				+'<article class="infotext">'
 					+'<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>'
 					+'<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>'
@@ -827,7 +827,7 @@ var WdisTud = $(''
 
 
 				+'<li><a href="javascript:toggle("test2")">Zweier ohne Steuermann</a></li>'
-				+'<div id="test2" style="display: none">'
+				+'<div id="test2" style="">'
 				+'<article class="infotext">'
 					+'<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>'
 					+'<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>'
@@ -973,19 +973,32 @@ var WdisTud = $(''
 // Erster Klick
 
 var eins = $("#jahrA");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
-	//console.log("hello");
+	
+
 	$("#jahrA").toggleClass("hervorheben");
 	$("#ortA").toggleClass("hervorheben2");
 	//add margin
 	$("#jahrA").parent("li").toggleClass('addMarginzwei');
 	//box erst leeren
 	$('#disziplinen').html('');
+	//auch unterdisziplinen löschen
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
 	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenA").toggleClass("disziplinenA");
+	$(".dritteSpalte").toggleClass("dritteSpalteA");
+	
+	// die klasse vierteSpalteA muss entfernt werden
+	// wenn ich das zweite mal auf das Jahr klicke
+	// damit sie danach wieder hinzugefügt werden kann
+	if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteA');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrB");
@@ -1000,7 +1013,7 @@ eins.click(function(event){
 	//box erst leeren
 	$('#disziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
+	$('#disziplinen').html(disziplinenB);
 	$("#disziplinenB").toggleClass("disziplinenB");
 });
 
@@ -1016,7 +1029,7 @@ eins.click(function(event){
 	//box erst leeren
 	$('#disziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
+	$('#disziplinen').html(disziplinenC);
 	$("#disziplinenC").toggleClass("disziplinenC");
 });
 
@@ -1513,19 +1526,14 @@ eins.click(function(event){
 //});
 
 
-var zwei = $("#WdisT");
+var zwei = $("#disziplinen");
 
-zwei.on( „click“, „#WdisT", function() {
+zwei.on( "click", "#AdisA", function() {
 	event.preventDefault();
-	//console.log("hello");
-	$("#WdisT").toggleClass("hervorheben");
-	//add margin
-	$("#WdisT").parent("li").toggleClass('addMargin');
-	//box erst leeren
 	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#unterdisziplinen').html(disziplinenA);
-	$("#WdisTud").toggleClass("WdisTud");
+	$('#unterdisziplinen').html(WdisTud);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
 });
 
 

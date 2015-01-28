@@ -143,6 +143,10 @@ a {
 	margin: auto auto auto 30px;
 }
 
+.ersteSpalte, #disziplinen, #unterdisziplinen {
+	float: left;
+}
+
 
 
 /*HOVER*/
@@ -179,12 +183,18 @@ a:active {
 	transition: 0.6s opacity; /*immer in vorhandenem element*/
 }
 
+.dritteSpalteA {
+	visibility: visible; ; /*normal unsichtbar*/
+	opacity: 1;
+	transition: 0.6s opacity; /*immer in vorhandenem element*/
+}
+
 
 
 .disziplinenA {
-	visibility: visible !important; /*wenn in url dann sichtbar*/
-	opacity: 1 !important;
-	transition: 0.6s opacity;
+	/*visibility: visible; wenn in url dann sichtbar
+	opacity: 1 ;
+	transition: 0.6s opacity;*/
 }
 .disziplinenB {
 	visibility: visible !important; /*wenn in url dann sichtbar*/
@@ -362,6 +372,8 @@ a:active {
 
 
 
+
+
 /*Unterdisziplinen*/
 
 
@@ -378,7 +390,11 @@ a:active {
 }
 
 
-
+.vierteSpalteA {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.6s;
+}
 
 
 /*NACH KLICK*/
@@ -408,4 +424,7 @@ a:active {
 	margin-bottom: 20px;
 }
 
+a, a:link {
+	cursor: pointer;
+}
 
