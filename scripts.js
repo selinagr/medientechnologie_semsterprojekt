@@ -470,7 +470,7 @@ var disziplinenU = $(
 			+'<li><a id="UdisT">Wasserspringen</a></li>'
 			+'<li><a id="UdisU">Segeln</a></li>'
 			+'<li><a id="UdisV">Turnen</a></li>'
-			+'<li><a id="UdisW">Volleyball</a></li>i>'
+			+'<li><a id="UdisW">Volleyball</a></li>'
 		+'</ul>'
 		+'<div class="clearFloat"></div>');
 
@@ -498,7 +498,7 @@ var disziplinenV = $(
 		+'</ul>'
 		+'<div class="clearFloat"></div>');
 
-var disziplinenW = $(
+var disziplinenW = $( /*___________________________________________________________________*/
 				'<ul id="disziplinenW" class="dritteSpalte">'
 					+'<li><a id="WdisA">Basketball</a></li>'
 					+'<li><a id="WdisB">Bogenschießen</a></li>'
@@ -802,12 +802,349 @@ var disziplinenFF = $(
 
 
 
+var udBasketball = $(
+				'<ul id="udBasketball" class="vierteSpalte">'
+					+'<li><a id="jWdAudA">Frauen</a></li>'
+					+'<li><a id="jWdAudB">Männer</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udBogenschiessen = $(
+				'<ul id="udBogenschiessen" class="vierteSpalte">'
+					+'<li><a id="jWdBudA">auf 90m</a></li>'
+					+'<li><a id="jWdBudB">auf 70m</a></li>'
+					+'<li><a id="jWdBudC">auf 60m</a></li>'
+					+'<li><a id="jWdBudD">auf 50m</a></li>'
+					+'<li><a id="jWdBudE">auf 30m</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udBoxen = $(
+				'<ul id="udBoxen" class="vierteSpalte">'
+					+'<li><a id="jWdCudA">Halbfliegengewicht</a></li>'
+					+'<li><a id="jWdCudB">Fliegengewicht</a></li>'
+					+'<li><a id="jWdCudC">Bantamgewicht</a></li>'
+					+'<li><a id="jWdCudD">Federgewicht</a></li>'
+					+'<li><a id="jWdCudE">Leichtgewicht</a></li>'
+					+'<li><a id="jWdCudF">Halbweltergewicht</a></li>'
+					+'<li><a id="jWdCudG">Weltergewicht</a></li>'
+					+'<li><a id="jWdCudH">Halbmittelgewicht</a></li>'
+					+'<li><a id="jWdCudI">Mittelgewicht</a></li>'
+					+'<li><a id="jWdCudJ">Halbschwergewicht</a></li>'
+					+'<li><a id="jWdCudK">Schwergewicht</a></li>'
+					+'<li><a id="jWdCudL">Superschwergewicht</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+var udFechten = $(
+				'<ul id="udFechten" class="vierteSpalte">'
+					+'<li><a id="jWdDudA">Florett Einzel</a></li>'
+					+'<li><a id="jWdDudB">Florett Mannschaft</a></li>'
+					+'<li><a id="jWdDudC">Degen Einzel</a></li>'
+					+'<li><a id="jWdDudD">Degen Mannschaft</a></li>'
+					+'<li><a id="jWdDudE">Säbel Einzel</a></li>'
+					+'<li><a id="jWdDudF">Säbel Mannschaft</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udFussball = $(
+				'<ul id="udFussball" class="vierteSpalte">'
+					+'<li><a id="jWdEudA">Qualifikation</a></li>'
+					+'<li><a id="jWdEudB">Gruppenphase</a></li>'
+					+'<li><a id="jWdEudC">Viertelfinale</a></li>'
+					+'<li><a id="jWdEudD">Halbfinale</a></li>'
+					+'<li><a id="jWdEudE">Spiel um Bronze</a></li>'
+					+'<li><a id="jWdEudF">Finale</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udGewichtheben = $(
+				'<ul id="udGewichtheben" class="vierteSpalte">'
+					+'<li><a id="jWdFudA">Fliegengewicht</a></li>'
+					+'<li><a id="jWdFudB">Bantamgewicht</a></li>'
+					+'<li><a id="jWdFudC">Federgewicht</a></li>'
+					+'<li><a id="jWdFudD">Leichtgewicht</a></li>'
+					+'<li><a id="jWdFudE">Mittelgewicht</a></li>'
+					+'<li><a id="jWdFudF">Leichtschwergewicht</a></li>'
+					+'<li><a id="jWdFudG">Mittelschwergewicht</a></li>'
+					+'<li><a id="jWdFudH">1. Schwergewicht</a></li>'
+					+'<li><a id="jWdFudI">2. Schwergewicht</a></li>'
+					+'<li><a id="jWdFudJ">Superschwergewicht</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udHandball = $(
+				'<ul id="udHandball" class="vierteSpalte">'
+					+'<li><a id="jWdGudA">Vorrundenspiele</a></li>'
+					+'<li><a id="jWdGudB">Vorrunde A</a></li>'
+					+'<li><a id="jWdGudC">Vorrunde B</a></li>'
+					+'<li><a id="jWdGudD">Spiele um Plätze 5 bis 12</a></li>'
+					+'<li><a id="jWdGudE">Spiel um Platz 3</a></li>'
+					+'<li><a id="jWdGudF">Finale</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udHockey = $(
+				'<ul id="udHockey" class="vierteSpalte">'
+					+'<li><a id="jWdHudA">Qualifikation</a></li>'
+					+'<li><a id="jWdHudB">Gruppe A</a></li>'
+					+'<li><a id="jWdHudC">Gruppe B</a></li>'
+					+'<li><a id="jWdHudD">Finale</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udJudo = $(
+				'<ul id="udJudo" class="vierteSpalte">'
+					+'<li><a id="jWdIudA">Superleichtgewicht</a></li>'
+					+'<li><a id="jWdIudB">Halbleichtgewicht </a></li>'
+					+'<li><a id="jWdIudC">Leichtgewicht</a></li>'
+					+'<li><a id="jWdIudD">Halbmittelgewicht </a></li>'
+					+'<li><a id="jWdIudE">Mittelgewicht</a></li>'
+					+'<li><a id="jWdIudF">Halbschwergewicht</a></li>'
+					+'<li><a id="jWdIudG">Schwergewicht</a></li>'
+					+'<li><a id="jWdIudH">Offene Klasse</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udKanu = $(
+				'<ul id="udKanu" class="vierteSpalte">'
+					+'<li><a id="jWdJudA">Einer-Kajak 500 m</a></li>'
+					+'<li><a id="jWdJudB">Einer-Kajak 1000 m</a></li>'
+					+'<li><a id="jWdJudC">Zweier-Kajak 500 m</a></li>'
+					+'<li><a id="jWdJudD">Zweier-Kajak 1000 m</a></li>'
+					+'<li><a id="jWdJudE">Vierer-Kajak 1000 m</a></li>'
+					+'<li><a id="jWdJudF">Einer-Canadier 500 m</a></li>'
+					+'<li><a id="jWdJudG">Einer-Canadier 1000 m</a></li>'
+					+'<li><a id="jWdJudH">Zweier-Canadier 500 m</a></li>'
+					+'<li><a id="jWdJudI">Zweier-Canadier 1000 m</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udLeichtathletik = $(
+		'<ul id="udLeichtathletik" class="vierteSpalte">' //12
+			+'<li><a id="jWdKudA">100 m</a></li>'
+			+'<li><a id="jWdKudB">200 m</a></li>'
+			+'<li><a id="jWdKudC">400 m</a></li>'
+			+'<li><a id="jWdKudD">800 m</a></li>'
+			+'<li><a id="jWdKudE">1500 m</a></li>'
+			+'<li><a id="jWdKudF">3000 m</a></li>'
+			+'<li><a id="jWdKudG">5000 m</a></li>'
+			+'<li><a id="jWdKudH">10.000 m</a></li>'
+			+'<li><a id="jWdKudI">Marathon</a></li>'
+			+'<li><a id="jWdKudJ">20 km Gehen</a></li>'
+			+'<li><a id="jWdKudK">50 km Gehen</a></li>'
+			+'<li><a id="jWdKudL">100 m Hürden</a></li>'
+			+'<li><a id="jWdKudM">110 m Hürden</a></li>'
+			+'<li><a id="jWdKudN">400 m Hürden</a></li>'
+			+'<li><a id="jWdKudO">3000 m Hindernis</a></li>'
+			+'<li><a id="jWdKudP">4 × 100 m Staffel</a></li>'
+			+'<li><a id="jWdKudQ">4 × 400 m Staffel</a></li>'
+			+'<li><a id="jWdKudR">Hochsprung</a></li>'
+			+'<li><a id="jWdKudS">Stabhochsprung</a></li>'
+			+'<li><a id="jWdKudT">Weitsprung</a></li>'
+			+'<li><a id="jWdKudU">Dreisprung</a></li>'
+			+'<li><a id="jWdKudV">Kugelstoßen</a></li>'
+			+'<li><a id="jWdKudW">Diskuswurf</a></li>'
+			+'<li><a id="jWdKudX">Hammerwurf</a></li>'
+			+'<li><a id="jWdKudY">Speerwurf</a></li>'
+			+'<li><a id="jWdKudZ">Zehnkampf</a></li>'
+			+'<li><a id="jWdKudAA">Siebenkampf</a></li>'
+		+'</ul>'
+		+'<div class="clearFloat"></div>');
+
+
+var udModernerFuenfkampf = $(
+				'<ul id="udModernerFuenfkampf" class="vierteSpalte">'
+					+'<li><a id="jWdLudA">Einzel</a></li>'
+					+'<li><a id="jWdLudB">Mannschaft</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udBahnradrennen = $(
+				'<ul id="udBahnradrennen" class="vierteSpalte">'
+					+'<li><a id="jWdMudA">Sprint</a></li>'
+					+'<li><a id="jWdMudB">1000 m Zeitfahren</a></li>'
+					+'<li><a id="jWdMudC">4000 m Einerverfolgung</a></li>'
+					+'<li><a id="jWdMudD">4000 m Mannschaftsverfolgung</a></li>'
+					+'<li><a id="jWdMudE">Punktefahren 50 km</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+var udStrassenrennen = $(
+				'<ul id="udStrassenrennen" class="vierteSpalte">'
+					+'<li><a id="jWdNudA">Straße (79,2 km)</a></li>'
+					+'<li><a id="jWdNudB">Straßenrennen (190,2 km)</a></li>'
+					+'<li><a id="jWdNudC">Mannschaftszeitfahren (100 km)</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+var udDressurreiten = $(
+				'<ul id="udDressurreiten" class="vierteSpalte">' 
+					+'<li><a id="jWdOudA">Dressur Einzel/a></li>'
+					+'<li><a id="jWdOudB">Dressur Mannschaft</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+var udVielseitigkeitsreiten = $(
+				'<ul id="udVielseitigkeitsreiten" class="vierteSpalte">' 
+					+'<li><a id="jWdPudA">Vielseitigkeit Einzel</a></li>'
+					+'<li><a id="jWdPudB">Vielseitigkeit Mannschaft</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+var udSpringreiten = $(
+				'<ul id="udSpringreiten" class="vierteSpalte">' 
+					+'<li><a id="jWdQudA">Springreiten Einzel</a></li>'
+					+'<li><a id="jWdQudB">Springreiten Mannschaft</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+var udFreistilringen = $(
+				'<ul id="udFreistilringen" class="vierteSpalte">'
+					+'<li><a id="jWdRudA">Papiergewicht</a></li>'
+					+'<li><a id="jWdRudB">Fliegengewicht </a></li>'
+					+'<li><a id="jWdRudC">Bantamgewicht </a></li>'
+					+'<li><a id="jWdRudD">Federgewicht </a></li>'
+					+'<li><a id="jWdRudE">Leichtgewicht </a></li>'
+					+'<li><a id="jWdRudF">Weltergewicht </a></li>'
+					+'<li><a id="jWdRudG">Mittelgewicht </a></li>'
+					+'<li><a id="jWdRudH">Halbschwergewicht</a></li>'
+					+'<li><a id="jWdRudI">Schwergewicht </a></li>'
+					+'<li><a id="jWdRudJ">Superschwergewicht </a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+var udRingen = $(
+				'<ul id="udRingen" class="vierteSpalte">'
+					+'<li><a id="jWdSudA">Papiergewicht</a></li>'
+					+'<li><a id="jWdSudB">Fliegengewicht </a></li>'
+					+'<li><a id="jWdSudC">Bantamgewicht </a></li>'
+					+'<li><a id="jWdSudD">Federgewicht </a></li>'
+					+'<li><a id="jWdSudE">Leichtgewicht </a></li>'
+					+'<li><a id="jWdSudF">Weltergewicht </a></li>'
+					+'<li><a id="jWdSudG">Mittelgewicht </a></li>'
+					+'<li><a id="jWdSudH">Halbschwergewicht</a></li>'
+					+'<li><a id="jWdSudI">Schwergewicht </a></li>'
+					+'<li><a id="jWdSudJ">Superschwergewicht </a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+
+
+var udSchiessen = $(
+				'<ul id="udSchiessen" class="vierteSpalte">'
+					+'<li><a id="jWdUudA">Kleinkaliber Dreistellungskampf</a></li>'
+					+'<li><a id="jWdUudB">Kleinkaliber liegend</a></li>'
+					+'<li><a id="jWdUudC">Freie Scheibenpistole</a></li>'
+					+'<li><a id="jWdUudD">Laufende Scheibe</a></li>'
+					+'<li><a id="jWdUudE">Olympische Schnellfeuerpistole</a></li>'
+					+'<li><a id="jWdUudF">Luftgewehr</a></li>'
+					+'<li><a id="jWdUudG">Luftpistole</a></li>'
+					+'<li><a id="jWdUudH">Trap</a></li>'
+					+'<li><a id="jWdUudI">Skeet</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udKTspringen = $(
+				'<ul id="udKTspringen" class="vierteSpalte">'
+					+'<li><a id="jWdVudA">Männer</a></li>'
+					+'<li><a id="jWdVudB">Frauen</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+
+var udSchwimmen = $(
+		'<ul id="udSchwimmen" class="vierteSpalte">' //12
+			+'<li><a id="jWdWudA">100 m Freistil</a></li>'
+			+'<li><a id="jWdWudB">200 m Freistil</a></li>'
+			+'<li><a id="jWdWudC">400 m Freistil</a></li>'
+			+'<li><a id="jWdWudD">800 m Freistil</a></li>'
+			+'<li><a id="jWdWudE">1500 m Freistil</a></li>'
+			+'<li><a id="jWdWudF">100 m Rücken</a></li>'
+			+'<li><a id="jWdWudG">200 m Rücken</a></li>'
+			+'<li><a id="jWdWudH">100 m Brust</a></li>'
+			+'<li><a id="jWdWudI">200 m Brust</a></li>'
+			+'<li><a id="jWdWudJ">100 m Schmetterling</a></li>'
+			+'<li><a id="jWdWudK">200 m Schmetterling</a></li>'
+			+'<li><a id="jWdWudL">200 m Lagen</a></li>'
+			+'<li><a id="jWdWudM">400 m Lagen</a></li>'
+			+'<li><a id="jWdWudN">4 x 100 m Freistil</a></li>'
+			+'<li><a id="jWdWudO">4 x 200 m Freistil</a></li>'
+			+'<li><a id="jWdWudP">4 x 100 m Lagen</a></li>'
+			+'<li><a id="jWdWudQ">Synchronschwimmen Einzel</a></li>'
+			+'<li><a id="jWdWudR">Synchronschwimmen Duett</a></li>'
+		+'</ul>'
+		+'<div class="clearFloat"></div>');
+
+
+var udWasserball = $(
+				'<ul id="udWasserball" class="vierteSpalte">'
+					+'<li><a id="jWdXudA">Männer</a></li>'
+					+'<li><a id="jWdXudB">Frauen</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udSegeln = $(
+				'<ul id="udSegeln" class="vierteSpalte">'
+					+'<li><a id="jWdYudA">Finn-Dinghy</a></li>'
+					+'<li><a id="jWdYudB">Flying Dutchman</a></li>'
+					+'<li><a id="jWdYudC">Star</a></li>'
+					+'<li><a id="jWdYudD">Soling</a></li>'
+					+'<li><a id="jWdYudE">470er</a></li>'
+					+'<li><a id="jWdYudF">Tornado</a></li>'
+					+'<li><a id="jWdYudG">Windsurfen</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udTurnen = $(
+				'<ul id="udTurnen" class="vierteSpalte">'
+					+'<li><a id="jWdZudA">Einzelmehrkampf</a></li>'
+					+'<li><a id="jWdZudB">Mannschaftsmehrkampf</a></li>'
+					+'<li><a id="jWdZudC">Barren/a></li>'
+					+'<li><a id="jWdZudD">Stufenbarren</a></li>'
+					+'<li><a id="jWdZudE">Boden</a></li>'
+					+'<li><a id="jWdZudF">Pferdsprung</a></li>'
+					+'<li><a id="jWdZudG">Reck</a></li>'
+					+'<li><a id="jWdZudH">Ringe</a></li>'
+					+'<li><a id="jWdZudI">Seitpferd</a></li>'
+					+'<li><a id="jWdZudJ">Schwebebalken</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+var udVolleyball = $(
+				'<ul id="udVolleyball" class="vierteSpalte">'
+					+'<li><a id="jWdAAudA">Vorrunde</a></li>'
+					+'<li><a id="jWdAAudB">Finalrunde</a></li>'
+				+'</ul>'
+				+'<div class="clearFloat"></div>');
+
+
+
+/*_________________________________________________________________________________________________________________________________*/
+
+
 
 var WdisTud = $(''
-			+'<ul id="udrudern"class="">'
+			+'<ul id="udrudern"class="vierteSpalte">'
 
 
-				+'<li><a href="">Einer</a></li>'
+				+'<li><a id="einer">Einer</a></li>'
 				+'<div id="test1">'
 				+'<article class="infotext">'
 					+'<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>'
@@ -826,7 +1163,7 @@ var WdisTud = $(''
 				+'</div>'
 
 
-				+'<li><a href="javascript:toggle("test2")">Zweier ohne Steuermann</a></li>'
+				+'<li><a id="zweieroS">Zweier ohne Steuermann</a></li>'
 				+'<div id="test2" style="">'
 				+'<article class="infotext">'
 					+'<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>'
@@ -838,15 +1175,15 @@ var WdisTud = $(''
 					+'<p>Silber - Spanien: Fernando Climent Huerta, Luis María Lasúrtegui</p>'
 					+'<p>Bronze - Norwegen: Hans Magnus Grepperud, Sverre Løken</p>'
 					+'<p class="infotextdick">Medaillen Frauen</p>'
-					+'<p>Gold - Rumänien: Rumänien: Rodica Arba, Elena Horvat</p>'
+					+'<p>Gold - Rumänien: Rodica Arba, Elena Horvat</p>'
 					+'<p>Silber - Kanada: Elizabeth Craig, Patricia Smith</p>'
 					+'<p>Bronze - Deutschland: Ellen Becker, Iris Völkner</p>'
 				+'</article>'
 				+'</div>'
 
 
-				+'<li><a href="javascript:toggle("test3")">Zweier mit Steuermann</a></li>'
-				+'<div id="test3" style="display: none">'
+				+'<li><a id="zweiermS">Zweier mit Steuermann</a></li>'
+				+'<div id="test3">'
 				+'<article class="infotext">'
 					+'<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>'
 					+'<p class="normaltext">Die Sowjetunion boykottierte die Spiele, da die Sicherheit ihrer Sportler in Los Angeles nicht gewährleistet sei - 18 Staaten schließen sich dem Boykott an und veranstalten stattdessen die Wettkämpfe der Freundschaft.</p>'
@@ -860,7 +1197,7 @@ var WdisTud = $(''
 				+'</div>'
 
 
-				+'<li><a href="javascript:toggle("test4")">Doppelzweier</a></li>'
+				+'<li ><a id="doppelzweier">Doppelzweier</a></li>'
 				+'<div id="test4" style="display: none">'
 				+'<article class="infotext">'
 					+'<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>'
@@ -879,7 +1216,7 @@ var WdisTud = $(''
 				+'</div>'
 
 
-				+'<li><a href="javascript:toggle("test5")">Vierer ohne Steuermann</a></li>'
+				+'<li ><a id="viereroS">Vierer ohne Steuermann</a></li>'
 				+'<div id="test5" style="display: none">'
 				+'<article class="infotext">'
 					+'<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>'
@@ -894,7 +1231,7 @@ var WdisTud = $(''
 				+'</div>'
 
 
-				+'<li><a href="javascript:toggle("test6")">Vierer mit Steuermann</a></li>'
+				+'<li ><a id="vierermS">Vierer mit Steuermann</a></li>'
 				+'<div id="test6" style="display: none">'
 				+'<article class="infotext">'
 					+'<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>'
@@ -916,7 +1253,7 @@ var WdisTud = $(''
 				+'</div>'
 
 
-				+'<li><a href="javascript:toggle("test7")">Doppelvierer</a></li>'
+				+'<li ><a id="doppelvierer">Doppelvierer</a></li>'
 				+'<div id="test7" style="display: none">'
 				+'<article class="infotext">'
 					+'<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>'
@@ -937,7 +1274,7 @@ var WdisTud = $(''
 				+'</div>'
 
 
-				+'<li><a href="javascript:toggle("test8")">Achter</a></li>'
+				+'<li ><a id="achter">Achter</a></li>'
 				+'<div id="test8" style="display: none">'
 				+'<article class="infotext">'
 					+'<p>Die Olympischen Sommerspiele 1984 (offiziell Spiele der XXIII. Olympiade genannt) fanden vom 28. Juli bis zum 12. August 1984 in Los Angeles statt. Die kalifornische Stadt hatte sich als einzige beim Internationalen Olympischen Komitee (IOC) um die Austragung dieser olympischen Sportwettkämpfe beworben. An den Sommerspielen 1984 nahmen 140 Mannschaften mit insgesamt 6797 Sportlern teil, darunter 5230 Männer und 1567 Frauen.</p>'
@@ -981,6 +1318,7 @@ eins.click(function(event){
 
 	$("#jahrA").toggleClass("hervorheben");
 	$("#ortA").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrA").parent("li").toggleClass('addMarginzwei');
 	//box erst leeren
@@ -1002,505 +1340,780 @@ eins.click(function(event){
 });
 
 var eins = $("#jahrB");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
-	//console.log("hello");
+
 	$("#jahrB").toggleClass("hervorheben");
 	$("#ortB").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrB").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	//auch unterdisziplinen löschen
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
 	$('#disziplinen').html(disziplinenB);
-	$("#disziplinenB").toggleClass("disziplinenB");
+	$(".dritteSpalte").toggleClass("dritteSpalteB");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteB');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrC");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrC").toggleClass("hervorheben");
 	$("#ortC").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrC").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
 	$('#disziplinen').html(disziplinenC);
-	$("#disziplinenC").toggleClass("disziplinenC");
+	$(".dritteSpalte").toggleClass("dritteSpalteC");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteC');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrD");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrD").toggleClass("hervorheben");
 	$("#ortD").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrD").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenD").toggleClass("disziplinenD");
+	$('#disziplinen').html(disziplinenD);
+	$(".dritteSpalte").toggleClass("dritteSpalteD");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteD');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrE");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrE").toggleClass("hervorheben");
 	$("#ortE").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrE").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenE").toggleClass("disziplinenE");
+	$('#disziplinen').html(disziplinenE);
+	$(".dritteSpalte").toggleClass("dritteSpalteE");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteE');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrF");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrF").toggleClass("hervorheben");
 	$("#ortF").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrF").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenF").toggleClass("disziplinenF");
+	$('#disziplinen').html(disziplinenF);
+	$(".dritteSpalte").toggleClass("dritteSpalteF");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteF');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrG");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrG").toggleClass("hervorheben");
 	$("#ortG").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrG").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenG").toggleClass("disziplinenG");
+	$('#disziplinen').html(disziplinenG);
+	$(".dritteSpalte").toggleClass("dritteSpalteG");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteG');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrH");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrH").toggleClass("hervorheben");
 	$("#ortH").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrH").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenH").toggleClass("disziplinenH");
+	$('#disziplinen').html(disziplinenH);
+	$(".dritteSpalte").toggleClass("dritteSpalteH");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteH');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrI");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrI").toggleClass("hervorheben");
 	$("#ortI").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrI").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenI").toggleClass("disziplinenI");
+	$('#disziplinen').html(disziplinenI);
+	$(".dritteSpalte").toggleClass("dritteSpalteI");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteI');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrJ");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrJ").toggleClass("hervorheben");
 	$("#ortJ").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrJ").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenJ").toggleClass("disziplinenJ");
+	$('#disziplinen').html(disziplinenJ);
+	$(".dritteSpalte").toggleClass("dritteSpalteJ");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteJ');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrK");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrK").toggleClass("hervorheben");
 	$("#ortK").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrK").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenK").toggleClass("disziplinenK");
+	$('#disziplinen').html(disziplinenK);
+	$(".dritteSpalte").toggleClass("dritteSpalteK");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteK');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrL");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrL").toggleClass("hervorheben");
 	$("#ortL").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrL").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenL").toggleClass("disziplinenL");
+	$('#disziplinen').html(disziplinenL);
+	$(".dritteSpalte").toggleClass("dritteSpalteL");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteL');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrM");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrM").toggleClass("hervorheben");
 	$("#ortM").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrM").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenM").toggleClass("disziplinenM");
+	$('#disziplinen').html(disziplinenM);
+	$(".dritteSpalte").toggleClass("dritteSpalteM");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteM');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrN");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrN").toggleClass("hervorheben");
 	$("#ortN").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrN").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenN").toggleClass("disziplinenN");
+	$('#disziplinen').html(disziplinenN);
+	$(".dritteSpalte").toggleClass("dritteSpalteN");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteN');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrO");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrO").toggleClass("hervorheben");
 	$("#ortO").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrO").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenO").toggleClass("disziplinenO");
+	$('#disziplinen').html(disziplinenO);
+	$(".dritteSpalte").toggleClass("dritteSpalteO");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteO');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrP");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrP").toggleClass("hervorheben");
 	$("#ortP").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrP").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenP").toggleClass("disziplinenP");
+	$('#disziplinen').html(disziplinenP);
+	$(".dritteSpalte").toggleClass("dritteSpalteP");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteP');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrQ");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrQ").toggleClass("hervorheben");
 	$("#ortQ").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrQ").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenQ").toggleClass("disziplinenQ");
+	$('#disziplinen').html(disziplinenQ);
+	$(".dritteSpalte").toggleClass("dritteSpalteQ");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteQ');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrR");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrR").toggleClass("hervorheben");
 	$("#ortR").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrR").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenR").toggleClass("disziplinenR");
+	$('#disziplinen').html(disziplinenR);
+	$(".dritteSpalte").toggleClass("dritteSpalteR");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteR');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrS");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrS").toggleClass("hervorheben");
 	$("#ortS").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrS").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenS").toggleClass("disziplinenS");
+	$('#disziplinen').html(disziplinenS);
+	$(".dritteSpalte").toggleClass("dritteSpalteS");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteS');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrT");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrT").toggleClass("hervorheben");
 	$("#ortT").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrT").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenT").toggleClass("disziplinenT");
+	$('#disziplinen').html(disziplinenT);
+	$(".dritteSpalte").toggleClass("dritteSpalteT");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteT');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrU");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrU").toggleClass("hervorheben");
 	$("#ortU").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrU").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenU").toggleClass("disziplinenU");
+	$('#disziplinen').html(disziplinenU);
+	$(".dritteSpalte").toggleClass("dritteSpalteU");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteU');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrV");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrV").toggleClass("hervorheben");
 	$("#ortV").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrV").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenV").toggleClass("disziplinenV");
+	$('#disziplinen').html(disziplinenV);
+	$(".dritteSpalte").toggleClass("dritteSpalteV");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteV');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrW");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrW").toggleClass("hervorheben");
 	$("#ortW").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrW").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
 	$('#disziplinen').html(disziplinenW);
-	$("#disziplinenW").toggleClass("disziplinenW");
+	$(".dritteSpalte").toggleClass("dritteSpalteW");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteW');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrX");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrX").toggleClass("hervorheben");
 	$("#ortX").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrX").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenX").toggleClass("disziplinenX");
+	$('#disziplinen').html(disziplinenX);
+	$(".dritteSpalte").toggleClass("dritteSpalteX");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteX');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrY");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrY").toggleClass("hervorheben");
 	$("#ortY").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrY").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenY").toggleClass("disziplinenY");
+	$('#disziplinen').html(disziplinenY);
+	$(".dritteSpalte").toggleClass("dritteSpalteY");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteY');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrZ");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrZ").toggleClass("hervorheben");
 	$("#ortZ").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrZ").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenZ").toggleClass("disziplinenZ");
+	$('#disziplinen').html(disziplinenZ);
+	$(".dritteSpalte").toggleClass("dritteSpalteZ");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteZ');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrAA");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrAA").toggleClass("hervorheben");
 	$("#ortAA").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrAA").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenAA").toggleClass("disziplinenAA");
+	$('#disziplinen').html(disziplinenAA);
+	$(".dritteSpalte").toggleClass("dritteSpalteAA");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteAA');
+	}
+
+	clickCounter = !clickCounter;
 });
 
-var eins = $("#jahBB");
+var eins = $("#jahrBB");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrBB").toggleClass("hervorheben");
 	$("#ortBB").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrBB").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenBB").toggleClass("disziplinenBB");
+	$('#disziplinen').html(disziplinenBB);
+	$(".dritteSpalte").toggleClass("dritteSpalteBB");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteBB');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrCC");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrCC").toggleClass("hervorheben");
 	$("#ortCC").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrCC").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenCC").toggleClass("disziplinenCC");
+	$('#disziplinen').html(disziplinenCC);
+	$(".dritteSpalte").toggleClass("dritteSpalteCC");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteCC');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrDD");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrDD").toggleClass("hervorheben");
 	$("#ortDD").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrDD").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenDD").toggleClass("disziplinenDD");
+	$('#disziplinen').html(disziplinenDD);
+	$(".dritteSpalte").toggleClass("dritteSpalteDD");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteDD');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrEE");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrEE").toggleClass("hervorheben");
 	$("#ortEE").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrEE").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenEE").toggleClass("disziplinenEE");
+	$('#disziplinen').html(disziplinenEE);
+	$(".dritteSpalte").toggleClass("dritteSpalteEE");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteEE');
+	}
+
+	clickCounter = !clickCounter;
 });
 
 var eins = $("#jahrFF");
+var clickCounter = false;
 
 eins.click(function(event){
 	event.preventDefault();
 	//console.log("hello");
 	$("#jahrFF").toggleClass("hervorheben");
 	$("#ortFF").toggleClass("hervorheben2");
+	$(".ersteSpalte").toggleClass("aneu");
 	//add margin
 	$("#jahrFF").parent("li").toggleClass('addMargin');
 	//box erst leeren
 	$('#disziplinen').html('');
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	$('#disziplinen').html(disziplinenA);
-	$("#disziplinenFF").toggleClass("disziplinenFF");
+	$('#disziplinen').html(disziplinenFF);
+	$(".dritteSpalte").toggleClass("dritteSpalteFF");
+
+		if (clickCounter) {
+		$(".vierteSpalte").removeClass('vierteSpalteFF');
+	}
+
+	clickCounter = !clickCounter;
 });
-
-
-
-
-
 
 
 
@@ -1510,32 +2123,662 @@ eins.click(function(event){
 
 // Zweiter Klick_______________________________________________________________
 
-//var zwei = $("#WdisT");
-
-//zwei.click(function(event){
-	//event.preventDefault();
-	//console.log("hello");
-	//$("#WdisT").toggleClass("hervorheben");
-	//add margin
-	//$("#WdisT").parent("li").toggleClass('addMargin');
-	//box erst leeren
-	//$('#unterdisziplinen').html('');
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisA", function(event) {
+	event.preventDefault();
+	$("#WdisA").parent("li").toggleClass('addMarginzwei');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisA").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
-	//$('#unterdisziplinen').html(disziplinenA);
-	//$("#WdisTud").toggleClass("WdisTud");
-//});
+	$('#unterdisziplinen').html(udBasketball);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
 
 
 var zwei = $("#disziplinen");
-
-zwei.on( "click", "#AdisA", function() {
+zwei.on( "click", "#WdisT", function(event) {
 	event.preventDefault();
+	$("#WdisT").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisT").toggleClass("hervorheben");
 	$('#unterdisziplinen').html('');
 	//dann inhalt einfügen
 	$('#unterdisziplinen').html(WdisTud);
 	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
 });
 
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisB", function(event) {
+	event.preventDefault();
+	$("#WdisB").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisB").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udBogenschiessen);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisC", function(event) {
+	event.preventDefault();
+	$("#WdisC").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisC").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udBoxen);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisD", function(event) {
+	event.preventDefault();
+	$("#WdisD").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisD").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udFechten);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisE", function(event) {
+	event.preventDefault();
+	$("#WdisE").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisE").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udFussball);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisF", function(event) {
+	event.preventDefault();
+	$("#WdisF").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisF").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udGewichtheben);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisG", function(event) {
+	event.preventDefault();
+	$("#WdisG").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisG").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udHandball);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisH", function(event) {
+	event.preventDefault();
+	$("#WdisH").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisH").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udHockey);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisI", function(event) {
+	event.preventDefault();
+	$("#WdisI").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisI").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udJudo);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisJ", function(event) {
+	event.preventDefault();
+	$("#WdisJ").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisJ").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udKanu);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisK", function(event) {
+	event.preventDefault();
+	$("#WdisK").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisK").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udLeichtathletik);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisL", function(event) {
+	event.preventDefault();
+	$("#WdisL").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisL").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udModernerFuenfkampf);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisM", function(event) {
+	event.preventDefault();
+	$("#WdisM").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisM").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udBahnradrennen);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisN", function(event) {
+	event.preventDefault();
+	$("#WdisN").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisN").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udStrassenrennen);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisO", function(event) {
+	event.preventDefault();
+	$("#WdisO").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisO").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udDressurreiten);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisP", function(event) {
+	event.preventDefault();
+	$("#WdisP").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisP").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udVielseitigkeitsreiten);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisQ", function(event) {
+	event.preventDefault();
+	$("#WdisQ").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisQ").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udSpringreiten);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisR", function(event) {
+	event.preventDefault();
+	$("#WdisR").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisR").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udFreistilringen);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisS", function(event) {
+	event.preventDefault();
+	$("#WdisS").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisS").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udRingen);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisU", function(event) {
+	event.preventDefault();
+	$("#WdisU").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisU").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udSchiessen);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisV", function(event) {
+	event.preventDefault();
+	$("#WdisV").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisV").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udKTspringen);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisW", function(event) {
+	event.preventDefault();
+	$("#WdisW").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisW").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udSchwimmen);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisX", function(event) {
+	event.preventDefault();
+	$("#WdisX").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisX").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udWasserball);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisY", function(event) {
+	event.preventDefault();
+	$("#WdisY").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisY").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udSegeln);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisZ", function(event) {
+	event.preventDefault();
+	$("#WdisZ").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisZ").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udTurnen);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var zwei = $("#disziplinen");
+zwei.on( "click", "#WdisAA", function(event) {
+	event.preventDefault();
+	$("#WdisAA").parent("li").toggleClass('addMargin');
+	$(".dritteSpalte").toggleClass("aneu");
+	$("#WdisAA").toggleClass("hervorheben");
+	$('#unterdisziplinen').html('');
+	//dann inhalt einfügen
+	$('#unterdisziplinen').html(udVolleyball);
+	$(".vierteSpalte").toggleClass("vierteSpalteA");
+	$("#test1").hide();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+
+
+
+
+
+
+// Dritter Klick_______________________________________________________________________
+
+
+var drei = $("#unterdisziplinen");
+drei.on( "click", "#einer", function(event) {
+	event.preventDefault();
+	$("#einer").parent("li").toggleClass('addMarginzwei');
+	$("#einer").toggleClass("hervorheben");
+	$(".vierteSpalte").toggleClass("aneu");
+	console.log("klick auf mich passiert");
+	$("#test1").fadeIn();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+
+var drei = $("#unterdisziplinen");
+drei.on( "click", "#zweieroS", function(event) {
+	event.preventDefault();
+	$("#zweieroS").parent("li").toggleClass('addMargin');
+	$("#zweieroS").toggleClass("hervorheben");
+	$(".vierteSpalte").toggleClass("aneu");
+	console.log("klick auf mich passiert");
+	$("#test2").fadeIn();
+	$("#test1").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var drei = $("#unterdisziplinen");
+drei.on( "click", "#zweiermS", function(event) {
+	event.preventDefault();
+	$("#zweiermS").parent("li").toggleClass('addMargin');
+	$("#zweiermS").toggleClass("hervorheben");
+	$(".vierteSpalte").toggleClass("aneu");
+	console.log("klick auf mich passiert");
+	$("#test3").fadeIn();
+	$("#test2").hide();
+	$("#test1").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var drei = $("#unterdisziplinen");
+drei.on( "click", "#doppelzweier", function(event) {
+	event.preventDefault();
+	$("#doppelzweier").parent("li").toggleClass('addMargin');
+	$("#doppelzweier").toggleClass("hervorheben");
+	$(".vierteSpalte").toggleClass("aneu");
+	console.log("klick auf mich passiert");
+	$("#test4").fadeIn();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test1").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var drei = $("#unterdisziplinen");
+drei.on( "click", "#viereroS", function(event) {
+	event.preventDefault();
+	$("#viereroS").parent("li").toggleClass('addMargin');
+	$("#viereroS").toggleClass("hervorheben");
+	$(".vierteSpalte").toggleClass("aneu");
+	console.log("klick auf mich passiert");
+	$("#test5").fadeIn();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test1").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var drei = $("#unterdisziplinen");
+drei.on( "click", "#vierermS", function(event) {
+	event.preventDefault();
+	$("#vierermS").parent("li").toggleClass('addMargin');
+	$("#vierermS").toggleClass("hervorheben");
+	$(".vierteSpalte").toggleClass("aneu");
+	console.log("klick auf mich passiert");
+	$("#test6").fadeIn();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test1").hide();
+	$("#test7").hide();
+	$("#test8").hide();
+});
+var drei = $("#unterdisziplinen");
+drei.on( "click", "#doppelvierer", function(event) {
+	event.preventDefault();
+	$("#doppelvierer").parent("li").toggleClass('addMargin');
+	$("#doppelvierer").toggleClass("hervorheben");
+	$(".vierteSpalte").toggleClass("aneu");
+	console.log("klick auf mich passiert");
+	$("#test7").fadeIn();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test1").hide();
+	$("#test8").hide();
+});
+var drei = $("#unterdisziplinen");
+drei.on( "click", "#achter", function(event) {
+	event.preventDefault();
+	$("#achter").parent("li").toggleClass('addMargin');
+	$("#achter").toggleClass("hervorheben");
+	$(".vierteSpalte").toggleClass("aneu");
+	console.log("klick auf mich passiert");
+	$("#test8").fadeIn();
+	$("#test2").hide();
+	$("#test3").hide();
+	$("#test4").hide();
+	$("#test5").hide();
+	$("#test6").hide();
+	$("#test7").hide();
+	$("#test1").hide();
+});
 
 
 
